@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PWA</title>
     <link rel="manifest" href="manifest.json" />
+		<script>
+			window.onload = function () {
+				if ('serviceWorker' in navigator) {
+					navigator.serviceWorker.register('sw.js')
+        }
+			}
+		</script>
   </head>
   <body>
   </body>
